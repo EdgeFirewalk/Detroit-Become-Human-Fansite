@@ -1,0 +1,196 @@
+@font-face {
+    font-family: "Gotham Ultra";
+    src: url("../fonts/GothamUltra.otf") format("OpenType")
+}
+
+@font-face {
+    font-family: "Gotham Rounded Light";
+    src: url("../fonts/GothamRoundedLight.otf") format("OpenType")
+}
+   
+
+* {
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Gotham Rounded Light', monospace;
+    font-size: 30px;
+}
+
+a,
+a:visited {
+    text-decoration: none;
+
+    color: #00aff0;
+}
+
+.container {
+    width: 1000px;
+    margin: 0 auto;
+
+    /* border-left: 1px solid red;
+    border-right: 1px solid red; */
+}
+
+/* Header */
+
+.header {
+    position: absolute;
+
+    margin: 10px 0;
+    width: 100%;
+}
+
+.header__nav {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 25px;
+
+    text-transform: uppercase;
+
+    border-radius: 5px;
+
+    background-color: rgba(0, 0, 0, .3);
+}
+
+.header__nav-item,
+.header__nav-item:visited {
+    position: relative;
+
+    margin: 0 5px;
+
+    font-size: 18px;
+
+    color: white;
+    border-bottom: 2px solid rgba(0, 0, 0, 0);
+
+    transition: color .2s linear, border .1s linear;
+}
+
+.header__nav-item:hover {
+    color: #2266CE;
+    border-bottom: 2px solid #2266CE;
+}
+
+/* Intro */
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    height: 100vh;
+
+    text-align: center;
+
+    color: white;
+    background: url('../img/introBG.jpg') center no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.intro__title {
+    font-family: 'Gotham Ultra', monospace;
+    font-size: 160px;
+    text-transform: uppercase;
+
+    text-shadow: 0 0 15px black;
+}
+
+.intro__subtitle {
+    font-family: 'Gotham Rounded Light', monospace;
+    font-size: 55px;
+    letter-spacing: 35px;
+    text-transform: uppercase;
+
+    text-shadow: 0 0 10px black;
+}
+
+/* About */
+/* Main Characters */
+/* RA9 */
+
+.text-block {
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+
+    text-align: center;
+}
+
+.text-block__title {
+    margin: 25px;
+
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.text-block__image {
+    width: 400px;
+    height: 400px;
+
+    object-fit: cover;
+}
+
+.text-block__span {
+    font-weight: 700;
+}
+
+.text-block__sub-image-text {
+    margin-bottom: 15px;
+
+    font-size: 20px;
+}
+
+.text-block__text {
+    margin: 30px 0;
+
+    text-align: justify;
+    font-size: 20px;
+    line-height: 2rem;
+}
+
+.text-block__separator {
+    width: 80%;
+    margin: 5px auto;
+}
+
+.images-block {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.images-block__image {
+    height: 300px;
+    margin: 5px;
+
+    object-fit: cover;
+}
+
+.image-2,
+.image-3 {
+    width: 100%;
+}
+
+.footer {
+    width: 100%;
+
+    background-color: rgba(0, 0,0, .1);
+}
+
+.footer__inner {
+    font-size: 15px;
+    text-align: center;
+    line-height: 1.5rem;
+}
